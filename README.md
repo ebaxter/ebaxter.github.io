@@ -1,2 +1,2 @@
 # ebaxter.github.io
-My personal webpage.
+Source code for my personal website.  To view, click <a href = "https://ebaxter.github.io">here</a>.
