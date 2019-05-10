@@ -1,5 +1,3 @@
-/* @pjs preload="Distant.txt","tno_formatted.dat","planet_orbital.dat"; */
-
 int npart;
 int nplanet = 9;
 float[] xx; //positions of objects
@@ -36,7 +34,7 @@ float sun_radius = 5.0;
 
 
 void setup() {
-  size(700, 700, P3D);
+  size(500, 500, P3D);
   scaling = 6.0;
   float radius_scaling = 150.0;
   dt = 10.0*0.3*10000.0/radius_scaling;
@@ -137,9 +135,9 @@ void setup() {
       maxa = a_au;
     }
   }
-  println("maxrad = ", maxrad);
-  println("maxa = ", maxa);
-  println("Number of bodies above min rad = ", i);
+  //println("maxrad = ", maxrad);
+  //println("maxa = ", maxa);
+  //println("Number of bodies above min rad = ", i);
   npart = i;
  
   //planets
@@ -384,7 +382,7 @@ void draw() {
   }
 
   //fixed view
-  boolean do_moving_view = true;
+  boolean do_moving_view = false;
   if (!do_moving_view) {
     camera(width/2.0, height/2.0, -500.0, 0., 0., 0., 0, 1, 0);
     //rotateY( - PI/4 + 0.2);

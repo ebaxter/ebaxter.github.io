@@ -3,7 +3,7 @@
 <html>
   <head>
     <title>Eric Jones Baxter</title>
-<script type="text/javascript" src="processing.js"></script>
+<script type="text/javascript" src="processing.min.js"></script>
 
   </head>
 
@@ -19,6 +19,13 @@ width: 800px;
     display: block;
     margin: 0 auto;
 }
+#theCanvas {
+width: 1200px;
+margin: auto;
+border: 5px solid black;
+display: block;
+}
+
 </style>
 
 <div class="title">
@@ -27,9 +34,9 @@ width: 800px;
 </p>
 </div>
 
-<div class = "title">
-
-<canvas data-processing-sources="tno_sketch.pde"></canvas>
+<div class="title">
+<canvas "theCanvas" data-processing-sources="tno_sketch.pde"></canvas>
+</div>
 
   </body>
 </html>
