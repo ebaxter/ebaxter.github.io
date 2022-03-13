@@ -1,0 +1,77 @@
+$(document).ready(function(){
+    // Hide gal x CMB lensing div by default
+    $('#galxcmb').hide();
+    $('#clusters').hide();    
+    $('#sz').hide();
+    $('#indirectdetection').hide();
+    $('#stats').hide();
+    $('#various').hide();	    
+    
+    $('#gohomelink').click(function(){
+	$('#galxcmb').hide();
+	$('#clusters').hide();	
+	$('#sz').hide();
+	$('#indirectdetection').hide();
+	$('#stats').hide();
+	$('#various').hide();		
+	$('#main_wrap').show();
+    });    
+    $('#galxcmblink').click(function(){
+	$('#main_wrap').hide();
+	$('#galxcmb').show();
+    });
+    $('#cmbclusterlensinglink').click(function(){
+	$('#main_wrap').hide();
+	$('#cmbclusterlensing').show();
+    });
+    $('#szlink').click(function(){
+	$('#main_wrap').hide();
+	$('#sz').show();
+    });
+    $('#indirectdetectionlink').click(function(){
+	$('#main_wrap').hide();
+	$('#indirectdetection').show();
+    });
+    $('#statslink').click(function(){
+	$('#main_wrap').hide();
+	$('#stats').show();
+    });
+    $('#tensionlink').click(function(){
+	$('#main_wrap').hide();
+	$('#tension').show();
+    });
+    $('#clusterslink').click(function(){
+	$('#main_wrap').hide();
+	$('#clusters').show();
+    });
+    $('#variouslink').click(function(){
+	$('#main_wrap').hide();
+	$('#various').show();
+    });
+
+    $('#returnhome1').click(function(){
+	$('#main_wrap').show();
+	$('#galxcmb').hide();
+    });
+    $('#returnhome2').click(function(){
+	$('#main_wrap').show();
+	$('#clusters').hide();	
+    });
+    $('#returnhome3').click(function(){
+	$('#main_wrap').show();
+	$('#sz').hide();	
+    });
+    $('#returnhome4').click(function(){
+	$('#main_wrap').show();
+	$('#indirectdetection').hide();	
+    });
+    $('#returnhome5').click(function(){
+	$('#main_wrap').show();
+	$('#stats').hide();	
+    });
+    $('#returnhome6').click(function(){
+	$('#main_wrap').show();
+	$('#various').hide();	
+    });
+
+});
