@@ -1,21 +1,34 @@
 $(document).ready(function(){
-    // Hide gal x CMB lensing div by default
+    // Hide all divs except for main
     $('#galxcmb').hide();
     $('#clusters').hide();    
     $('#sz').hide();
     $('#indirectdetection').hide();
-    $('#stats').hide();
-    $('#various').hide();	    
+    $('#tensions').hide();
+    $('#machinelearning').hide();
+
+    // If user presses browser back u
+    window.onhashchange = function() {
+    //	//blah blah blah
+    	console.log("TEEEHEE");
+    //	if ($(#main_wrap).is(':hidden')){
+    //	    console.log("hidden");
+    //	}
+    }
     
+    
+    // Home button
     $('#gohomelink').click(function(){
 	$('#galxcmb').hide();
 	$('#clusters').hide();	
 	$('#sz').hide();
 	$('#indirectdetection').hide();
-	$('#stats').hide();
-	$('#various').hide();		
+	$('#tensions').hide();
+	$('#machinelearning').hide();		
 	$('#main_wrap').show();
-    });    
+    });
+
+    // Show appropriate div
     $('#galxcmblink').click(function(){
 	$('#main_wrap').hide();
 	$('#galxcmb').show();
@@ -32,9 +45,9 @@ $(document).ready(function(){
 	$('#main_wrap').hide();
 	$('#indirectdetection').show();
     });
-    $('#statslink').click(function(){
+    $('#tensionslink').click(function(){
 	$('#main_wrap').hide();
-	$('#stats').show();
+	$('#tensions').show();
     });
     $('#tensionlink').click(function(){
 	$('#main_wrap').hide();
@@ -44,9 +57,9 @@ $(document).ready(function(){
 	$('#main_wrap').hide();
 	$('#clusters').show();
     });
-    $('#variouslink').click(function(){
+    $('#machinelearninglink').click(function(){
 	$('#main_wrap').hide();
-	$('#various').show();
+	$('#machinelearning').show();
     });
 
     $('#returnhome1').click(function(){
@@ -67,11 +80,11 @@ $(document).ready(function(){
     });
     $('#returnhome5').click(function(){
 	$('#main_wrap').show();
-	$('#stats').hide();	
+	$('#tensions').hide();	
     });
     $('#returnhome6').click(function(){
 	$('#main_wrap').show();
-	$('#various').hide();	
+	$('#machinelearning').hide();	
     });
 
 });
