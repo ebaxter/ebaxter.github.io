@@ -8,13 +8,13 @@ $(document).ready(function(){
     $('#machinelearning').hide();
 
     // If user presses browser back u
-    window.onhashchange = function() {
+    //window.onhashchange = function() {
     //	//blah blah blah
-    	console.log("TEEEHEE");
+    //	console.log("TEEEHEE");
     //	if ($(#main_wrap).is(':hidden')){
     //	    console.log("hidden");
     //	}
-    }
+    //}
     
     
     // Home button
